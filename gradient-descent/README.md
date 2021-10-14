@@ -12,7 +12,7 @@ And When we use t-SNE, we optimize clusters etc.... <br>
 Gradient descent is a first-order iterative optimization algorithm for finding a <b>local minimum of a differentiable function</b>. The idea is to take repeated steps in the opposite direction of the gradient (or approximate gradient) of the function at the current point, because this is the direction of <b>steepest descent</b>. It reaches the local minima by taking big steps when it is far away and baby steps when it is close. Conversely, stepping in the direction of the gradient will lead to a local maximum of that function; the procedure is then known as gradient ascent.
 
 In our usecases, we try to minimise the loss function $L$ where the weights $w$ are the deciding paramaters. Minima of Loss-function intuitively means, finding the weights at the bottom-most point of the contour of a loss-function,where the Loss-function has its minimum value. <br>
-<img src="./goalisminima.png" width="400" height="400"><br>
+<img align="center" src="./goalisminima.png" width="400" height="400"><br>
 In the above figure, loss function is $J$ and $ w = [w_1,w_2] $. We initialize weights randomly at point A,the weights at point A will give very high loss-value which in turn makes our model to perform very badly. From point A, we need to navigate to the point B where the Loss is minimum and find the values of weights at point B,which are our required optimal weights. <br><br><br>
 Calculus gives a really easy solution to find the local minima of a function J by making its derivative $\frac{d}{dw}J(w) = 0 $ <br>
 But that's not always feasible for really complicated functions. A more flexible tactic is to <br><br>
