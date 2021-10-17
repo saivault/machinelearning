@@ -10,21 +10,33 @@
 
 <body class="stackedit">
   <div class="stackedit__html">
+  <p>Featurization and Feature Engineering is the most important aspect of ML.<p>
   <h2 id="vsintro">Featurization vs Feature Engineering</h2>
   <p>Featurization is a way to change some form of data (text data, graph data, time-series data,…) into a numerical vector.<p>
   <p>
-    Featurization is different from feature engineering. Feature engineering is just transforming the numerical features somehow so that the machine learning 
-    models  work well. In feature engineering, features are already in the numerical form; whereas in featurization data is not need to be in the form of
-    numerical vector.
+    Featurization is different from feature engineering. Feature engineering is about transforming the numerical features somehow so that they make machine
+    learning models perform well at prediction. In feature engineering, features are already in the numerical form; whereas in featurization data is not need
+    to be in the form of numerical vector.
   </p>
     <h2>Why Featurization?</h2>
     <p>
-      The machine learning model cannot work with row text data directly. In the end, machine learning models work with numerical (categorical, real,…) 
-      features. So it is import to change some type of data into numerical vector so that we can <b>leverage the whole power of linear algebra</b> (making the
-      decision boundary between data points)and statistics tools with other types of data also.
+      At the end of the day, all our machine learning algorithm can work only with numerical (categorical, real,…) features. So it is import to change some 
+      type of data into numerical vector so that we can <b>leverage the whole power of linear algebra</b> (making thedecision boundary between data points)
+      and <b>statistics tools</b> with other types of data also.
     </p>
-     <b>leverage the whole power of linear algebra</b>  <br>
-     <strong>leverage the whole power of linear algebra</strong> 
+    Out of the various featurization techniques available for the text data, the most commonly used techniques are :
+    <ul>
+        <li>Bag of Words (BOW)</li>
+        <li>Term Frequency - Inverse Document Frequency (TF-IDF)</li>
+        <li>Average Word2Vec</li>
+        <li>TF-IDF Weighted Average Word2Vec</li>
+    </ul>
+   For the categorical features, the most commonly used featurization techniques are the mean response time and one-hot encoding.
+   <p>
+      Feature Engineering is the process of using domain knowledge to extract the new variables from the raw data, which makes the machine learning 
+      algorithms work better. Feature Engineering is a difficult task as it is domain-specific.Feature Selection is to select some useful, relevant 
+      features among the features we generate/find/have in our data.
+   </p>
   </div>
 </body>
 </html>
