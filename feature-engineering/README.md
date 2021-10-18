@@ -1,1 +1,1 @@
-[techniques-of-feature-engineering](fe-techniques/README.html)
+[Methods of Feature Engineering](fe-methods/README.html)
