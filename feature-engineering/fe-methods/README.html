@@ -17,7 +17,7 @@
     Converting the features into indicator variables is one of the techniques of feature engineering. Deciding whether to apply this technique is 
     problem-specific. 
   </p>
-  <b>Example 1</b>
+  <b>Example 1</b>&nbsp;&nbsp;&nbsp;
   If we have ‘height’ as a feature, and it is a real-valued feature, then
   <ul>
     <li>We can keep it as it is and go ahead with data modeling (or)</li>
@@ -32,12 +32,14 @@
     </li>
   </ul>
   Here ‘height’ is a binary indicator variable. Mostly the indicator variables are binary. <br>
-  <b>Example 2</b>
+  <b>Example 2</b>&nbsp;&nbsp;&nbsp;
   If a given feature is categorical, let’s say the feature ‘country’ is a categorical feature, then it can be converted into an indicator variable as
-  <code>
-  if country == ‘India’ OR country == ‘USA’: return 1
-  else: return 0
-  </code>
+  <pre class=" language-python"><code class="prism  language-python">
+      <span class="token keyword">if</span> country == ‘India’ <span class="token keyword">OR</span> country == ‘USA’ <span class="token punctuation">:</span>
+          <span class="token keyword"> return</span> 1 </span>
+      <span class="token keyword">else</span> <span class="token punctuation">:</span>  
+          <span class="token keyword"> return</span> 0 </span>
+      </code></pre>
 
   
   
