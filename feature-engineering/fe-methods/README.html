@@ -10,6 +10,7 @@
 
 <body class="stackedit">
   <div class="stackedit__html">
+  <br><br><br>
   Some feature engineering techniques are as follows :
   <h1 id="intro">Indicator Variables</h1>
   <p>
@@ -22,10 +23,12 @@
     <li>We can keep it as it is and go ahead with data modeling (or)</li>
     <li>
       We can convert it into an indicator variable as <br>
-      <code>
-          if height > 150cm return class 1
-          height <=150cm return class 0 
-      </code>
+      <pre class=" language-python"><code class="prism  language-python">
+      <span class="token keyword">if</span> height > 150cm <span class="token punctuation">:</span>
+          <span class="token keyword"> return class1 </span>
+      <span class="token keyword">else</span> <span class="token punctuation">:</span>  
+          <span class="token keyword"> return class0 </span>
+      </code></pre>
     </li>
   </ul>
   Here ‘height’ is a binary indicator variable. Mostly the indicator variables are binary.
